@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>one drummer</title>
+  </head>
+  <body>
+    <div><%= drummer.name %></div>
+    <form action="/reservation/<%= drummer.id %>" method="POST">
+      <label for="booking_date">booking date</label>
+      <br />
+      <input type="date" id="booking_date" name="booking_date" />
+      <br />
+
+      <br />
+      <input
+        type="hidden"
+        id="drummer_id"
+        name="drummer_id"
+        value="<%= drummer.id %>"
+      />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
