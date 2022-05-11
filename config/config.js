@@ -1,8 +1,8 @@
 module.exports = {
   development: {
-    username: '<YOUR_USERNAME>',
+    username: 'tehkohrz',
     password: null,
-    database: '<DATABASE_NAME>',
+    database: 'drummer-mvc',
     host: '127.0.0.1',
     dialect: 'postgres',
   },

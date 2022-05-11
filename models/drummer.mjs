@@ -19,7 +19,7 @@ export default function initDrummerModel(sequelize, DataTypes) {
         allowNull: false,
         type: DataTypes.DATE,
       },
-      price: {
+      price_per_jig: {
         type: DataTypes.DECIMAL,
       },
     },
